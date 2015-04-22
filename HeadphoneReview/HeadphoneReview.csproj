@@ -131,6 +131,8 @@
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="PricesOnEar.aspx" />
+    <Content Include="PricesOverEar.aspx" />
     <Content Include="Product.aspx" />
     <Content Include="Reviews.aspx" />
     <Content Include="Content\Site.css" />
@@ -205,6 +207,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
+    <Content Include="PricesInEar.aspx" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -292,6 +295,20 @@
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="PricesOnEar.aspx.cs">
+      <DependentUpon>PricesOnEar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PricesOnEar.aspx.designer.cs">
+      <DependentUpon>PricesOnEar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PricesOverEar.aspx.cs">
+      <DependentUpon>PricesOverEar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PricesOverEar.aspx.designer.cs">
+      <DependentUpon>PricesOverEar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -337,6 +354,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PricesInEar.aspx.cs">
+      <DependentUpon>PricesInEar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PricesInEar.aspx.designer.cs">
+      <DependentUpon>PricesInEar.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
