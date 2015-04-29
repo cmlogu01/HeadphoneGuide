@@ -13,15 +13,6 @@ namespace HeadphoneReview {
     public partial class About {
         
         /// <summary>
-        /// ProductsGrid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView ProductsGrid;
-        
-        /// <summary>
         /// ProductDetailView control.
         /// </summary>
         /// <remarks>
@@ -29,6 +20,15 @@ namespace HeadphoneReview {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView ProductDetailView;
+        
+        /// <summary>
+        /// ProductsGrid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView ProductsGrid;
         
         /// <summary>
         /// ProductDB control.

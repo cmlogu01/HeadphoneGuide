@@ -13,6 +13,10 @@
     </script>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
+
+   <%-- <asp:TextBox ID="Fit" runat="server" />
+    <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="submit" />--%>
+
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ModelID" DataSourceID="ProductsDB" ForeColor="#333333" GridLines="None">
         <AlternatingRowStyle BackColor="White" />
         <Columns>
@@ -27,16 +31,20 @@
             <asp:BoundField DataField="Type" HeaderText="Type" SortExpression="Type" />
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
-        <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-        <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-        <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+        <FooterStyle BackColor="#00AFF0" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#00AFF0" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#00AFF0" ForeColor="White" HorizontalAlign="Center" />
         <RowStyle BackColor="#EFF3FB" />
         <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
         <SortedAscendingCellStyle BackColor="#F5F7FB" />
-        <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+        <SortedAscendingHeaderStyle BackColor="#007AA8" />
         <SortedDescendingCellStyle BackColor="#E9EBEF" />
-        <SortedDescendingHeaderStyle BackColor="#4870BE" />
+        <SortedDescendingHeaderStyle BackColor="#00AFF0" />
     </asp:GridView>
-    <asp:SqlDataSource ID="ProductsDB" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT [ModelID], [Model], [Image], [Price], [Description], [Fit], [Type] FROM [Products] P LEFT JOIN SoundTypes ST on P.SoundTypeID = ST.TypeID LEFT JOIN Fits F on P.FitID = F.FitID"></asp:SqlDataSource>
+
+
+    <asp:SqlDataSource ID="ProductsDB" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT [ModelID], [Model], [Image], [Price], [Description], [Fit], [Type] FROM [Products] P LEFT JOIN SoundTypes ST on P.SoundTypeID = ST.TypeID LEFT JOIN Fits F on P.FitID = F.FitID">
+
+    </asp:SqlDataSource>
 
 </asp:Content>

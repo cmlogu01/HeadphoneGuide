@@ -1,23 +1,22 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="HeadphoneReview._Default" %>
 
 <asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1><%: Title %>.</h1>
-                <h2>Headphone Buying Guide (Pending Title)</h2>
-            </hgroup>
-            <p>
-                
-            </p>
-        </div>
-    </section>
-</asp:Content>
-<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <h3>What fit are you looking for?</h3>
- 
-           <a href="PricesInEar.aspx">In Ear</a><br />
-           <a href="PricesOnEar.aspx">On Ear</a><br />
-           <a href="PricesOverEar.aspx">Over Ear</a><br />
+<div class="mainSplash">
+
+          
+    <h2></h2>
+
+    <p>
+        Audiophilia isn't just for the rich. Check out our recommendations and find the perfect headphones for any budget.
+    </p><br /><br />
+
+
+    <a class="button-link" type="button" href="Reviews.aspx">explore</a>
+
+
+
+</div>
 
 </asp:Content>
+
+
